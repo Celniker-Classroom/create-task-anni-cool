@@ -1,13 +1,38 @@
+//comment: This is my HTML wireframe for my recipe book. I am planning on having three sections: 
+a button to add a new recipe, a list of all recipes with hyperlinks to each recipe page, and 
+then a list with the three categories (dinner, lunch, breakfast). I want to make it so that 
+you can click dinner and be given the recipes that are categorized as dinner. // 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book Wireframe</title>
 </head>
 <body>
-    <h1>Your html goes here...</h1>
-    <br>See the <a href="README.md">README</a> for project details
+    <header>
+        <h1>Recipe Book</h1>
+    </header>
+    <main>
+        <section  aria-lable="add-recipe"></section>
+            <button id="add-recipe-btn">Add New Recipe</button>
+        </section>
+        <section aria-label="recipe-list">
+            <h2>Recipe List</h2>
+            <ul id="recipe-list">
+                <li><a href="pancakes.html" class="pancake-recipe-link">Pancakes</a></li>
+    
+                <li><a href="omelette.html" class="omelette-recipe-link">Omelette</a></li>
+                <li><a href="salad.html" class="salad-recipe-link">Salad</a></li>
+            </ul>
+        </section>
+        <h2>Breakfast Recipes</h2>
+        <h2>Lunch Recipes</h2>
+        <h2>Dinner Recipes</h2>
+        </main>
+
+    </main>
+
 </body>
 </html>

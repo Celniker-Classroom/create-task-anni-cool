@@ -1,1 +1,14 @@
 /* Add Global styles here */
+
+.hidden {
+	display: none;
+}
+
+#recipe-list-toggle-btn {
+	margin-top: 10px;
+}
+
+#all-recipes-list ul {
+	margin-top: 10px;
+	padding-left: 20px;
+}
