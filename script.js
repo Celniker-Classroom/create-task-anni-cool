@@ -1,18 +1,18 @@
-const dropdown = document.getElementById('recipe-dropdown');
-const viewBtn = document.getElementById('view-recipe-btn');
-const recipeDetails = document.getElementById('recipe-details');
-const recipes= {
-    Salad: "Salad", 
-    Pasta: "Pasta"
-};
 
-viewBtn.addEventListener("click", function () {
-const selectedRecipe = dropdown.value;
 
-if (!selectedRecipe) {
-recipeDetails.textContent = "Please choose a recipe first.";
-return;
+//batter
+let batterPrice = 0;
+document.getElementById("gluten-free").addEventListener("checked, function() {
+    batterPrice = 5.25;
+    num= document.getElementById("gluten-free").value;
+    console.log(num);
 }
+//fillings 
 
-recipeDetails.textContent = recipe[selectedRecipe] || "Recipe not found.";
-});
+//toppings 
+
+//sides 
+
+//total price 
+totalPrice= batterPrice 
+document.getElementById("final-cost").textContent = totalPrice.toFixed(2);

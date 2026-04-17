@@ -1,21 +1,76 @@
 /* Add Global styles here */
+
 body {
+	border-color: rgb(12, 42, 68);
+	border-width: 1px;
+	border-style: solid;
 	background-color: rgba(115, 190, 196, 0.5);
 	font-family: 'Courier New', Courier, monospace;
-	font-size: 15px;
+	font-size: 13px;
 }	
 
 .pancake-title {
 	font-weight : 1000;
-	font-size: 50px;
+	font-size: 40px;	
 	background-color: rgb(255, 246, 235);
-	padding: 2px 6px; 
+	padding: 2px 2px; 
 	color: rgb(12, 42, 68);
 	border: rgb(115, 160, 196) 1px solid;
 	display: inline-block;
+}
+
+h3 {
+	color: rgb(12, 42, 68);
+	font-size: 20px;
+	background-color: rgb(255, 246, 235);
+	padding: 2px 6x;
+	display: inline-block;
+}
+
+.checkbox-list {
+	margin-top: 9px;
+}
+
+.checkbox-list label {
+	display: block;
+	margin-bottom: 8px;
+}
+
+.checkbox-list input {
+	margin-right: 8px;
+}
+
+.total-row {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	flex-wrap: wrap;
+}
+
+.total-row h2 {
+	margin: 0;
 }
 
 hr{ 
 	height: 4px; 
 	background-color: rgb(12, 42, 68); 
 }
+
+#btnCalc {
+	background-color: rgb(255, 246, 235);
+	color: rgb(12, 42, 68);
+	border: 1px solid rgb(12, 42, 68);
+	padding:5px 10px;
+	border-radius: 20px;
+	font-size: 14px;
+	cursor: pointer;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: 1000;
+	transition: transform 0.08s ease, background-color 0.08s ease, color 0.08s ease;
+}
+
+#btnCalc:active {
+	background-color: rgb(12, 42, 68);
+	color: rgb(255, 246, 235);
+	transform: translateY(2px);
+}	

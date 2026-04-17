@@ -13,22 +13,92 @@
     </header>
     <hr>
     <main>
-        <section  aria-label="Choose Batter:"></section>
-        </section>
-        <h3>Choose your batter:</h3>
+    <section aria-label="Choose your batter:"></section>
+    <h3>Choose your batter:</h3>
+    <div class="checkbox-list">
+            <label>
+                <input type="checkbox" id="gluten-free" name="gluten-free ($5.23)" value="Gluten-Free">
+                Gluten-Free ($5.25)
+            </label>
+            <label>
+                <input type="checkbox" id="whole-wheat" name="whole-wheat ($4.50)" value="Whole-Wheat">
+                Whole-Wheat ($4.50)
+            </label>
+            <label>
+                <input type="checkbox" id="buttermilk" name="buttermilk ($4.50)" value="Buttermilk">
+                Buttermilk ($4.50)
+            </label>
+        </div>
    <hr>
    <section aria-label="Choose fillings:"></section>
    <h3>Choose your fillings:</h3>
+   <div class="checkbox-list">
+            <label>
+                <input type="checkbox" id="blueberries" name="blueberries ($0.50)" value="Blueberries">
+                Blueberries ($0.50)
+            </label>
+            <label>
+                <input type="checkbox" id="chocolate-chip" name="chocolate-chip ($0.50)" value="Chocolate Chip">
+                Chocolate Chip ($0.50)
+            </label>
+            <label>
+                <input type="checkbox" id="banana" name="banana ($0.50)" value="Banana">
+                Banana ($0.50)
+            </label>
+              <label>
+                <input type="checkbox" id="none" name="none" value="None">
+                None
+            </label>
+        </div>
    <hr>
    <section aria-label="Choose toppings:"></section>
    <h3>Choose your toppings:</h3>
+      <div class="checkbox-list">
+            <label>
+                <input type="checkbox" id="maple-syrup" name="maple-syrup ($0.50)" value="Maple Syrup">
+                Maple Syrup ($0.50)
+            </label>
+            <label>
+                <input type="checkbox" id="whipped-cream" name="whipped-cream ($0.75)" value="Whipped Cream">
+                Whipped Cream ($0.75)
+            </label>
+            <label>
+                <input type="checkbox" id="butter" name="butter ($0.50)" value="Butter">
+                Butter ($0.50)
+            </label>
+              <label>
+                <input type="checkbox" id="none" name="none" value="None">
+                None
+            </label>
+        </div>
    <hr>
     <section aria-label="Choose sides:"></section>
     <h3>Choose your sides:</h3>
-<hr>
-    <h2> Final Cost: $<span id="final-cost">0.00</span></h2>
+    <div class="checkbox-list">
+            <label>
+                <input type="checkbox" id="eggs" name="eggs ($2.00)" value="Eggs">
+                Eggs ($2.00)
+            </label>
+            <label>
+                <input type="checkbox" id="bacon" name="bacon ($2.50)" value="Bacon">
+                Bacon ($2.50)
+            </label>
+            <label>
+                <input type="checkbox" id="sausage" name="sausage ($2.00)" value="Sausage">
+                Sausage ($2.00)
+            </label>
+              <label>
+                <input type="checkbox" id="none" name="none" value="None">
+                None
+            </label>
+    </div>
+    <hr>
+    <div class="total-row">
+        <h2>Final Cost: $<span id="final-cost">0.00</span></h2>
+        <button id="btnCalc" type="button">Calculate Total</button>
+    </div>
+    <hr>
     </main>
-<hr> 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
