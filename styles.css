@@ -6,14 +6,14 @@ body {
 	border-style: solid;
 	background-color: rgba(115, 190, 196, 0.5);
 	font-family: 'Courier New', Courier, monospace;
-	font-size: 14px;
+	font-size: 17px;
 }	
 
 .pancake-title {
 	font-weight : 1000;
-	font-size: 39px;	
+	font-size: 37px;	
 	background-color: rgb(255, 246, 235);
-	padding: 2px 1px; 
+	padding: 1px 1px; 
 	color: rgb(12, 42, 68);
 	border: rgb(115, 160, 196) 1px solid;
 	display: inline-block;
@@ -23,27 +23,27 @@ h3 {
 	color: rgb(12, 42, 68);
 	font-size: 20px;
 	background-color: rgb(255, 246, 235);
-	padding: 2px 6x;
+	padding: 1px 1px;
 	display: inline-block;
 }
 
 .checkbox-list {
-	margin-top: 9px;
+	margin-top: 4px;
 }
 
 .checkbox-list label {
 	display: block;
-	margin-bottom: 8px;
+	margin-bottom: 5px;
 }
 
 .checkbox-list input {
-	margin-right: 8px;
+	margin-right: 5px;
 }
 
 .total-row {
 	display: flex;
 	align-items: center;
-	gap: 12px;
+	gap: 1px;
 	flex-wrap: wrap;
 }
 
@@ -52,7 +52,7 @@ h3 {
 }
 
 hr{ 
-	height: 4px; 
+	height: 3px; 
 	background-color: rgb(12, 42, 68); 
 
 }

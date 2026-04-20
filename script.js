@@ -1,4 +1,4 @@
-//items this is the list 
+//list of all the menu items and their prices 
 let items = [
     {id: "gluten-free", price: 5.25},
     {id: "whole-wheat", price: 4.50},
@@ -14,23 +14,32 @@ let items = [
     {id: "sausage", price: 2.00},
 ]
 
-//total price 
-function calculateTotalPrice(items) {
-    let totalPrice = 0
+//selected items
+function getSelectedItems(items) {
+    let selectedItems = [];
     for (let i = 0; i < items.length; i++) {
         let item = items[i];
         let checkbox = document.getElementById(item.id)
         if (checkbox && checkbox.checked) {
-            totalPrice += item.price;
+            selectedItems.push(item);
         }
     }
-return totalPrice; 
+return selectedItems; 
 }
     
+//calculate total price
+function calculateTotalPrice(items) {
+  let totalPrice = 0;
+  for (let i = 0; i < items.length; i++) {
+    totalPrice += items[i].price;
+  }
+  return totalPrice;
+}
 
-
-//calculate button 
+//calculate button, causes selected items to be displayed and total price to be calculated and displayed
 document.getElementById("btnCalc").addEventListener("click", function(){
-let totalPrice = calculateTotalPrice(items);
-document.getElementById("final-cost").textContent = totalPrice.toFixed(2);
-}); 
+  let selected = getSelectedItems(items);
+  let total = calculateTotalPrice(selected);
+  document.getElementById("final-cost").textContent = total.toFixed(2);
+  document.getElementById("selected-items").textContent = selected.map(item => item.id).join(", ");
+});
