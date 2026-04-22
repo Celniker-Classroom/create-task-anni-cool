@@ -1,4 +1,9 @@
 //list of all the menu items and their prices 
+const savedColor = localStorage.getItem("selectedColor");
+if (savedColor) {
+document.body.style.backgroundColor = savedColor;
+}
+
 let items = [
     {id: "gluten-free", price: 5.25},
     {id: "whole-wheat", price: 4.50},

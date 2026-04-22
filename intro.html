@@ -24,10 +24,16 @@
                 <option value="pink">pink</option>
                 <option value="green">green</option>
             </select>
+//to connect the color scheme choice to the index page, I used the copiolt ai to help code. 
+<p>
+<a href = "index.html"
+id="goToIndex">Go to Index</a>
 
-<p> 
-            <button type="submit">Continue to Menu</button>
-</p>
-
+<script> const colorChoice = document.getElementById("color-scheme"); 
+    const goToIndex = document.getElementById("goToIndex");
+    goToIndex.addEventListener("click", function () { 
+        localStorage.setItem("selectedColor", colorChoice.value); 
+        });
+</script>
 </p>
 <form> 
