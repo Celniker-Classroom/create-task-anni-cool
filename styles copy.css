@@ -12,7 +12,7 @@ body {
 .pancake-title {
 	font-weight : 1000;
 	font-size: 37px;	
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(255, 246, 235);
 	padding: 1px 1px; 
 	color: rgb(12, 42, 68);
 	border: rgb(115, 160, 196) 1px solid;
@@ -58,7 +58,7 @@ hr{
 }
 
 #btnCalc {
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(255, 246, 235);
 	color: rgb(12, 42, 68);
 	border: 1px solid rgb(12, 42, 68);
 	padding:5px 10px;

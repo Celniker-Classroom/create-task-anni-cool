@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Book Wireframe</title>
-    <link rel ="stylesheet" href="styles.css">
+    <link id="theme-stylesheet" rel="stylesheet" href="styles-blue.css">
 </head>
 <body>
     <header>
@@ -15,17 +15,17 @@
     <main>
     <section aria-label="Choose your batter:">
     <h3>Choose your batter:</h3>
-    <div class="checkbox-list">
+    <div class="single-select-list">
             <label>
-                <input type="checkbox" id="gluten-free" value="Gluten-Free">
+                <input type="radio" name="batter" id="gluten-free" value="Gluten-Free">
                 Gluten-Free ($5.25)
             </label>
             <label>
-                <input type="checkbox" id="whole-wheat" value="Whole-Wheat">
+                <input type="radio" name="batter" id="whole-wheat" value="Whole-Wheat">
                 Whole-Wheat ($4.50)
             </label>
             <label>
-                <input type="checkbox" id="buttermilk" value="Buttermilk">
+                <input type="radio" name="batter" id="buttermilk" value="Buttermilk">
                 Buttermilk ($4.50)
             </label>
         </div>

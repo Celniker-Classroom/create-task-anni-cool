@@ -1,10 +1,11 @@
-/* Add Global styles here */
-
+/* Pink theme */
 body {
 	border-color: rgb(12, 42, 68);
-	border-width: 1px;
+	border-width: 50px;
 	border-style: solid;
-	background-color: rgba(96, 175, 175, 0.5);
+	background-color: rgba(255, 182, 216, 0.5);
+    padding: 20px;
+    margin: auto;
 	font-family: 'Courier New', Courier, monospace;
 	font-size: 17px;
 }	
@@ -13,16 +14,16 @@ body {
 	font-weight : 1000;
 	font-size: 37px;	
 	background-color: rgb(255, 255, 255);
-	padding: 1px 1px; 
+	padding: 4px 4px; 
 	color: rgb(12, 42, 68);
-	border: rgb(115, 160, 196) 1px solid;
+	border: rgb(226, 154, 187) 5px dashed;
 	display: inline-block;
-}
 
-h3 {
+}
+	h3 {
 	color: rgb(12, 42, 68);
 	font-size: 20px;
-	background-color: rgb(213, 236, 255);
+	background-color: rgb(255, 182, 216);
 	padding: 1px 1px;
 	display: inline-block;
 }
@@ -40,6 +41,19 @@ h3 {
 	margin-right: 5px;
 }
 
+.single-select-list {
+	margin-top: 4px;
+}
+
+.single-select-list label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.single-select-list input {
+	margin-right: 5px;
+}
+
 .total-row {
 	display: flex;
 	align-items: center;
@@ -53,7 +67,7 @@ h3 {
 
 hr{ 
 	height: 3px; 
-	background-color: rgb(12, 42, 68); 
+	background-color: rgba(248, 74, 205, 0.13); 
 
 }
 

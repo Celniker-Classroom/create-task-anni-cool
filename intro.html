@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazing Pancake House</title>
+    <link rel="stylesheet" href="intro.css">
 </head>
 <body>
+<hr>
     <header>
         <h1>Welcome to the Pancake House!</h1>
     </header>
@@ -14,26 +16,32 @@
         <p>The Pancake House offers a wide variety of delicous pancakes and other delicacies! This is the webpage for online ordering. Please enter in the following information and then select menu to continue.</p>
     <hr> 
 <form action="index.html" method="get">
-<p> 
+<p>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required placeholder="Your name"/>
-<p> 
+<p>
             <label for="Color-Scheme">Color Scheme:</label>
             <select id="color-scheme" name="color-scheme">
                 <option value="blue">blue</option>
                 <option value="pink">pink</option>
                 <option value="green">green</option>
             </select>
-//to connect the color scheme choice to the index page, I used the copiolt ai to help code. 
 <p>
 <a href = "index.html"
 id="goToIndex">Go to Index</a>
 
-<script> const colorChoice = document.getElementById("color-scheme"); 
+<hr>
+<script>
+    const colorChoice = document.getElementById("color-scheme");
     const goToIndex = document.getElementById("goToIndex");
-    goToIndex.addEventListener("click", function () { 
-        localStorage.setItem("selectedColor", colorChoice.value); 
-        });
+
+    goToIndex.addEventListener("click", function () {
+        localStorage.setItem("selectedTheme", colorChoice.value);
+    });
+
 </script>
 </p>
-<form> 
+</form>
+</main>
+</body>
+</html>

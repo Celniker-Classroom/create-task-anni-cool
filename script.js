@@ -1,7 +1,16 @@
-//list of all the menu items and their prices 
-const savedColor = localStorage.getItem("selectedColor");
-if (savedColor) {
-document.body.style.backgroundColor = savedColor;
+// Use the selected theme from intro page to swap the full stylesheet.
+const selectedTheme = localStorage.getItem("selectedTheme");
+const themeStylesheet = document.getElementById("theme-stylesheet");
+
+if (themeStylesheet) {
+  const themeFileMap = {
+    blue: "styles-blue.css",
+    pink: "styles-pink.css",
+    green: "styles-green.css"
+  };
+
+  const chosenThemeFile = themeFileMap[selectedTheme] || "styles-blue.css";
+  themeStylesheet.setAttribute("href", chosenThemeFile);
 }
 
 let items = [
@@ -48,3 +57,7 @@ document.getElementById("btnCalc").addEventListener("click", function(){
   document.getElementById("final-cost").textContent = total.toFixed(2);
   document.getElementById("selected-items").textContent = selected.map(item => item.id).join(", ");
 });
+
+<h3>"Thank you for the order"
+
+</h3>
