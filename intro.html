@@ -33,10 +33,12 @@ id="goToIndex">Go to Index</a>
 <hr>
 <script>
     const colorChoice = document.getElementById("color-scheme");
+    const nameInput = document.getElementById("name");
     const goToIndex = document.getElementById("goToIndex");
 
     goToIndex.addEventListener("click", function () {
         localStorage.setItem("selectedTheme", colorChoice.value);
+        localStorage.setItem("customerName", nameInput.value.trim());
     });
 
 </script>

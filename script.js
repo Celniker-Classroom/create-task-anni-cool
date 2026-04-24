@@ -51,13 +51,29 @@ function calculateTotalPrice(items) {
 }
 
 //calculate button, causes selected items to be displayed and total price to be calculated and displayed
-document.getElementById("btnCalc").addEventListener("click", function(){
-  let selected = getSelectedItems(items);
-  let total = calculateTotalPrice(selected);
-  document.getElementById("final-cost").textContent = total.toFixed(2);
-  document.getElementById("selected-items").textContent = selected.map(item => item.id).join(", ");
-});
+const calculateButton = document.getElementById("btnCalc");
+if (calculateButton) {
+  calculateButton.addEventListener("click", function(){
+    let selected = getSelectedItems(items);
+    let total = calculateTotalPrice(selected);
+    localStorage.setItem("orderTotal", total.toFixed(2));
+    localStorage.setItem("orderItems", selected.map(item => item.id).join(", "));
+    window.location.href = "exit.html";
+  });
+}
 
-<h3>"Thank you for the order"
+const orderNameTarget = document.getElementById("order-name");
+if (orderNameTarget) {
+  const storedName = localStorage.getItem("customerName") || "Guest";
+  orderNameTarget.textContent = storedName;
+}
 
-</h3>
+const exitCost = document.getElementById("final-cost");
+if (exitCost && !document.getElementById("btnCalc")) {
+  exitCost.textContent = localStorage.getItem("orderTotal") || "0.00";
+}
+
+const exitItems = document.getElementById("selected-items");
+if (exitItems && !document.getElementById("btnCalc")) {
+  exitItems.textContent = localStorage.getItem("orderItems") || "";
+}
