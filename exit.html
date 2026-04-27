@@ -13,6 +13,7 @@
     <hr>
     <main>
         <h2>Thank you for your order, <span id="order-name">Guest</span>!</h2>
+        <p id="wait-message"></p>
     <div class="total-row">
         <h2>Final Cost: $<span id="final-cost">0.00</span></h2>
     </div>
@@ -20,8 +21,9 @@
         <h3>Selected Items: <span id="selected-items"></span></h3>
     </div>
     <hr>
-    <a href = "intro.html"
-id="goToIntro">Add another order</a>
+    <form action="intro.html" method="get">
+        <button id="goToIntro" type="submit">Add another order</button>
+    </form>
     </main>
     <script src="script.js"></script>
 </body>

@@ -48,6 +48,13 @@ label {
     font-weight: 1000;
 	color: rgb(12, 42, 68);
 	background-color: rgb(252, 252, 252);
+	transition: transform 0.08s ease, background-color 0.08s ease, color 0.08s ease;
+}
+
+#goToIndex:active {
+	background-color: rgb(12, 42, 68);
+	color: rgb(255, 246, 235);
+	transform: translateY(2px);
 }
 
 select {
